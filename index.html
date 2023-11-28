@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Table</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <form class="form">
+          <label>Department</label>
+
+          <input type="radio" name="department" value="sd" required />
+          <label>SD</label>
+
+          <input type="radio" name="department" value="os" id="os" required />
+          <label>OS</label>
+
+          <input type="radio" name="department" value="el" id="el" required />
+          <label>EL</label>
+
+          <div>
+            <label>Student Name</label>
+            <input
+              class="userInput"
+              placeholder="type your name..."
+              required
+              min="0"
+              max="100"
+              type="text"
+            />
+          </div>
+          <div>
+            <label>Student Grade</label>
+            <input
+              class="userInput"
+              placeholder="type your grade..."
+              required
+              minlength="0"
+              maxlength="3"
+              type="number"
+            />
+          </div>
+          <input id="add" type="submit" value="Add" />
+        </form>
+
+        <div>
+          <label>Sort</label>
+          <select>
+            <option value="name">Name</option>
+            <option value="grade">Garde</option>
+          </select>
+        </div>
+        <div>
+          <label>Filter</label>
+          <select>
+            <option value="none">None</option>
+            <option value="less60">Grade &lt; 60</option>
+            <option value="more60">Grade &gt; 60</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="../../../../lib/JS Lib/functionsScript.js"></script>
+    <script src="Student.js"></script>
+    <script src="tableFunctions.js"></script>
+    <script src="consumingScript.js"></script>
+  </body>
+</html>

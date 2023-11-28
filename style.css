@@ -1,0 +1,55 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  width: 25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  border: 5px solid black;
+  gap: 0.5rem;
+}
+
+.userInput {
+  width: 10rem;
+  margin-block: 0.2rem;
+}
+#add {
+  margin-inline: 45%;
+  margin-top: 0.5rem;
+}
+
+.sd {
+  background-color: pink;
+}
+
+.os {
+  background-color: lightgreen;
+}
+
+.el {
+  background-color: lightblue;
+}
+
+img {
+  width: 23px;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
